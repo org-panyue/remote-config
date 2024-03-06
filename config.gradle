@@ -1,0 +1,13 @@
+ext {
+    app_versions = [
+            versionCode: 1,
+            versionName: "1.0.0.00"
+    ]
+
+
+    deps = [
+            retrofit2: [
+                    retrofit: "com.squareup.retrofit2:retrofit:2.9.0",
+            ]
+    ]
+}
