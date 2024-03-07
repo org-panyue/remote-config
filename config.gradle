@@ -19,7 +19,7 @@ ext {
             //插件依赖
             plugin: [
                     agp: "com.android.tools.build:gradle:8.2.2",
-                    kgq: "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22",
+                    kgp: "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22",
             ],
 
             //AndroidX 官方库
@@ -141,9 +141,9 @@ ext {
                 targetCompatibility build_versions.java
             }
 
-            kotlinOptions {
-                jvmTarget = build_versions.jvmTarget
-            }
+//            kotlinOptions {
+//                jvmTarget = build_versions.jvmTarget
+//            }
 
     }
 
