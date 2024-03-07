@@ -141,9 +141,9 @@ ext {
                 targetCompatibility build_versions.java
             }
 
-//            kotlinOptions {
-//                jvmTarget = build_versions.jvmTarget
-//            }
+            extension.kotlinOptions {
+                jvmTarget = build_versions.jvmTarget
+            }
 
     }
 
@@ -152,9 +152,9 @@ ext {
         extension ->
             extension.implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-            implementation deps.kotlin.android_core_ktx
-            implementation deps.androidx.appcompat
-            implementation deps.androidx.material
+            extension.implementation deps.kotlin.android_core_ktx
+            extension.implementation deps.androidx.appcompat
+            extension.implementation deps.androidx.material
     }
 }
 
