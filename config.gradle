@@ -1,13 +1,155 @@
+//通用配置
 ext {
     app_versions = [
             versionCode: 1,
-            versionName: "1.0.0.00"
+            versionName: "1.0.0"
+    ]
+
+    build_versions = [
+            minSdk    : 21,
+            targetSdk : 34,
+            compileSdk: 34,
+            java      : JavaVersion.VERSION_1_8
     ]
 
 
     deps = [
-            retrofit2: [
-                    retrofit: "com.squareup.retrofit2:retrofit:2.9.0",
-            ]
+
+            //插件依赖
+            plugin: [
+                    agp: "com.android.tools.build:gradle:8.2.2",
+                    kgq: "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22",
+            ],
+
+            //AndroidX 官方库
+            androidx: [
+                    appcompat: "androidx.appcompat:appcompat:1.6.1",
+                    material: 'com.google.android.material:material:1.11.0'
+            ],
+
+
+            kotlin: [
+                    // 扩展库
+                    android_core_ktx    : "androidx.core:core-ktx:1.12.0",
+            ],
+
     ]
 }
+
+
+//添加仓库
+def addRepos(RepositoryHandler handler) {
+    //Google 仓库
+    handler.google()
+    //Maven 仓库
+    handler.mavenCentral()
+    //gradle 插件仓库
+    handler.gradlePluginPortal()
+    //jitpack 仓库
+    handler.maven {
+        url 'https://jitpack.io'
+    }
+    //jcenter 阿里云镜像仓库
+    handler.maven {
+        url 'https://maven.aliyun.com/repository/jcenter'
+    }
+}
+
+
+//application 和 library 统一配置
+ext {
+    //设置App配置
+    setAppDefaultConfig = {
+        extension ->
+            //Android 插件
+            extension.apply plugin: 'com.android.application'
+            //kotlin 插件
+            extension.apply plugin: 'org.jetbrains.kotlin.android'
+            //kotlin-kapt
+            extension.apply plugin: 'kotlin-kapt'
+            //kotlin-parcelize
+            extension.apply plugin: 'kotlin-parcelize'
+            //描述
+            extension.description "app"
+            //配置
+            setAndroidConfig extension.android
+
+            extension.configurations.all {
+                resolutionStrategy {
+                    //强制版本
+
+                }
+            }
+
+            setDependencies extension.dependencies
+
+    }
+
+    //设置Lib配置
+    setLibDefaultConfig = {
+        extension ->
+            //库插件
+            extension.apply plugin: 'com.android.library'
+            //kotlin 插件
+            extension.apply plugin: 'org.jetbrains.kotlin.android'
+            //kotlin-kapt
+            extension.apply plugin: 'kotlin-kapt'
+            //kotlin-parcelize
+            extension.apply plugin: 'kotlin-parcelize'
+            //描述
+            extension.description "lib"
+
+            setAndroidConfig extension.android
+
+
+            extension.configurations.all {
+                resolutionStrategy {
+
+
+                }
+
+            }
+
+            setDependencies extension.dependencies
+    }
+
+
+    //设置Android配置
+    setAndroidConfig = {
+        extension ->
+            extension.compileSdk build_versions.compileSdk
+            extension.defaultConfig {
+                minSdk build_versions.minSdk
+                targetSdk build_versions.targetSdk
+                versionCode app_versions.versionCode
+                versionName app_versions.versionName
+            }
+
+
+            extension.sourceSets {
+                main {
+                    jniLibs.srcDirs = ['libs']
+                    java.srcDirs = ['src/main/java']
+                    res.srcDirs = ['src/main/res']
+                }
+            }
+
+            extension.compileOptions {
+                sourceCompatibility build_versions.java
+                targetCompatibility build_versions.java
+            }
+
+    }
+
+    //设置依赖
+    setDependencies = {
+        extension ->
+            extension.implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+            implementation deps.kotlin.android_core_ktx
+            implementation deps.androidx.appcompat
+            implementation deps.androidx.material
+    }
+}
+
+
