@@ -62,6 +62,14 @@ def addRepos(RepositoryHandler handler) {
     handler.maven {
         url 'https://maven.aliyun.com/repository/jcenter'
     }
+    handler.maven {
+        allowInsecureProtocol true
+        credentials {
+            username maven.username
+            password maven.password
+        }
+        url maven.repository
+    }
 }
 
 
