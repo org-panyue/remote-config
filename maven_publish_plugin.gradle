@@ -1,0 +1,105 @@
+//1、通过 apply plugin 引用当前插件
+//file:noinspection GrMethodMayBeStatic
+apply plugin: MavenPublish
+
+//定义上传源码task
+project.tasks.register('sourceJar', Jar) {
+    from android.sourceSets.main.java.srcDirs
+}
+
+class PushInfo {
+    //组名
+    def groupId
+    //模块名
+    def artifactId
+    //版本号
+    def version
+    //maven 用户名
+    def username
+    //maven 密码
+    def password
+    //maven 仓库地址
+    def repository
+}
+
+//2、自定义对象插件
+class MavenPublish implements Plugin<Project> {
+
+    def DEFAULT_USER_NAME = "admin"
+    def DEFAULT_PASSWORD = "admin123"
+    def DEFAULT_REPOSITORY = "http://101.37.87.61:8085/repository/yichi/"
+
+    @Override
+    void apply(Project project) {
+        println 'Hello MavenPush'
+
+        //引入 maven-publish 插件
+        project.apply(plugin: 'maven-publish')
+        //创建扩展
+        project.extensions.create("pushInfo",PushInfo)
+
+        //配置 maven-publish 插件发布
+        project.afterEvaluate {
+            project.publishing{
+                repositories {
+                    maven {
+                        allowInsecureProtocol true
+                        credentials {
+                            username project.pushInfo.username? project.pushInfo.username : DEFAULT_USER_NAME
+                            password project.pushInfo.password? project.pushInfo.password : DEFAULT_PASSWORD
+                        }
+                        url project.pushInfo.repository? project.pushInfo.repository : DEFAULT_REPOSITORY
+                    }
+                }
+
+                publications{
+                    maven(MavenPublication){
+                        if(project.pushInfo == null)throw new Throwable("pushInfo can not be null！！！")
+                        if(project.pushInfo.groupId == null)throw new Throwable("pushInfo groupId can not be null！！！")
+                        if(project.pushInfo.artifactId == null)throw new Throwable("pushInfo artifactId can not be null！！！")
+                        if(project.pushInfo.version == null)throw new Throwable("pushInfo version can not be null！！！")
+                        from project.components.release
+                        artifact project.tasks.findByName("sourceJar")
+
+                        groupId = project.pushInfo.groupId
+                        artifactId = project.pushInfo.artifactId
+                        version = project.pushInfo.version
+                    }
+                }
+            }
+        }
+    }
+}
+
+project.tasks.register("uploadArchive"){
+    group 'upload'
+    doLast {
+        def uploadArchives = project.tasks.findByName("publishMavenPublicationToMavenRepository")
+        if(uploadArchives == null){
+            println 'uploadArchives is null,find publish'
+            uploadArchives = project.tasks.findByName("publish")
+        }
+        if(uploadArchives == null){
+            println 'uploadArchives is still null,can not find exec uploadArchives task'
+            return
+        }
+
+        println 'find uploadArchives：' + uploadArchives
+        executeTask(uploadArchives)
+    }
+}
+
+def isWindows() {
+    return org.gradle.internal.os.OperatingSystem.current().isWindows()
+}
+
+def executeTask(Task task) {
+    def cmds = "${rootProject.projectDir}/gradlew"
+    if(isWindows()){
+        cmds = "${rootProject.projectDir}\\gradlew.bat"
+    }
+    exec {
+        // 通过命令，执行task任务
+        commandLine "${cmds}", "${task.getPath()}"
+    }
+}
