@@ -63,6 +63,8 @@ class MavenPublish implements Plugin<Project> {
                         if(!project.pushInfo.isPublishPlugin){
                             from project.components.release
                             artifact project.tasks.findByName("sourceJar")
+                        }else{
+                            from project.components.java
                         }
 
                         groupId = project.pushInfo.groupId
