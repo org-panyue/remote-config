@@ -29,6 +29,13 @@ ext {
                     kgp: "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22",
             ],
 
+            //unit test
+            unitTest: [
+                    junit: 'junit:junit:4.13.2',
+                    junitVersion: 'androidx.test.ext:junitVersion:1.1.5',
+                    espressoCore: 'androidx.test.espresso:espresso-core:3.5.1'
+            ],
+
             //AndroidX 官方库
             androidx: [
                     appcompat: "androidx.appcompat:appcompat:1.6.1",
@@ -45,7 +52,9 @@ ext {
             router: [
                     api: 'com.alibaba:arouter-api:1.5.2',
                     compiler: 'com.alibaba:arouter-compiler:1.5.2'
-            ]
+            ],
+
+
     ]
 
     addRepos = this.&addRepos
@@ -146,6 +155,8 @@ ext {
                 targetSdk build_versions.targetSdk
                 versionCode app_versions.versionCode
                 versionName app_versions.versionName
+
+                testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
             }
 
 
@@ -176,7 +187,11 @@ ext {
             extension.implementation deps.kotlin.android_core_ktx
             extension.implementation deps.androidx.appcompat
             extension.implementation deps.androidx.material
+
+            //unit test
+            extension.implementation deps.unitTest.junit
+            extension.androidTestImplementation deps.unitTest.junitVersion
+            extension.androidTestImplementation deps.unitTest.espressoCore
     }
 }
-
 
