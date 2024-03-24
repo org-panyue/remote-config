@@ -111,9 +111,6 @@ ext {
             extension.apply plugin: 'kotlin-parcelize'
             //描述
             extension.description "app"
-            extension.defaultConfig {
-                multiDexEnabled true
-            }
             //配置
             setAndroidConfig extension.android
 
