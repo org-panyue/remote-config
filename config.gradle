@@ -27,6 +27,14 @@ ext {
             plugin: [
                     agp: "com.android.tools.build:gradle:8.2.2",
                     kgp: "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22",
+                    appLifecycleDispatchPlugin: "com.yichi.plugin:AppLifecycleDispatchPlugin:1.5.0"
+            ],
+
+            //Application 声明周期分发
+            appLifeDispatch: [
+                    annotation: 'com.yichi:AppLifecycleDispatch-Annotation:1.5.0',
+                    processor: 'com.yichi:AppLifecycleDispatch-Processor:1.5.0',
+                    api: 'com.yichi:AppLifecycleDispatch-Api:1.5.0'
             ],
 
             //unit test
@@ -103,6 +111,9 @@ ext {
             extension.apply plugin: 'kotlin-parcelize'
             //描述
             extension.description "app"
+            extension.defaultConfig {
+                multiDexEnabled true
+            }
             //配置
             setAndroidConfig extension.android
 
