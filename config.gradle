@@ -189,9 +189,9 @@ ext {
             extension.implementation deps.androidx.material
 
             //unit test
-            extension.implementation deps.unitTest.junit
-            extension.androidTestImplementation deps.unitTest.junitVersion
-            extension.androidTestImplementation deps.unitTest.espressoCore
+//            extension.implementation deps.unitTest.junit
+//            extension.androidTestImplementation deps.unitTest.junitVersion
+//            extension.androidTestImplementation deps.unitTest.espressoCore
     }
 }
 
