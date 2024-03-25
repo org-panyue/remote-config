@@ -118,6 +118,14 @@ ext {
             extension.apply plugin: 'kotlin-parcelize'
             //描述
             extension.description "app"
+
+            kapt {
+                arguments {
+                    arg("AROUTER_MODULE_NAME", project.getName())
+                }
+                println 'kapt AROUTER_MODULE_NAME：' + project.getName()
+            }
+
             //配置
             setAndroidConfig extension.android
 
@@ -147,6 +155,13 @@ ext {
             //描述
             extension.description "lib"
 
+            kapt {
+                arguments {
+                    arg("AROUTER_MODULE_NAME", project.getName())
+                }
+                println 'kapt AROUTER_MODULE_NAME：' + project.getName()
+            }
+
             setAndroidConfig extension.android
 
 
@@ -175,13 +190,6 @@ ext {
 
                 testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-
-                kapt {
-                    arguments {
-                        arg("AROUTER_MODULE_NAME", project.getName())
-                    }
-                    println 'kapt AROUTER_MODULE_NAME：' + project.getName()
-                }
 
 //                javaCompileOptions {
 //                    annotationProcessorOptions {
