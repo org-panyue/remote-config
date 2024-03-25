@@ -28,7 +28,6 @@ ext {
                     agp: "com.android.tools.build:gradle:8.2.2",
                     kgp: "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22",
                     appLifecycleDispatchPlugin: "com.yichi.plugin:AppLifecycleDispatchPlugin:1.5.3",
-                    arouterRegister: "com.github.jadepeakpoet.ARouter:arouter-register:1.0.3"
             ],
 
             //Application 声明周期分发
@@ -60,8 +59,8 @@ ext {
 
             //路由
             router: [
-                    api: 'com.github.jadepeakpoet.ARouter:arouter-api:1.0.3',
-                    compiler: 'com.github.jadepeakpoet.ARouter:arouter-compiler:1.0.3'
+                    api: 'com.alibaba:arouter-api:1.5.2',
+                    compiler: 'com.alibaba:arouter-compiler:1.5.2'
             ],
 
             //yichi 自己封装编写的库
