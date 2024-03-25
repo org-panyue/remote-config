@@ -47,7 +47,8 @@ ext {
             //AndroidX 官方库
             androidx: [
                     appcompat: "androidx.appcompat:appcompat:1.6.1",
-                    material: 'com.google.android.material:material:1.11.0'
+                    material: 'com.google.android.material:material:1.11.0',
+                    multidex: 'androidx.multidex:multidex:2.0.1'
             ],
 
             //kotlin
@@ -61,6 +62,11 @@ ext {
                     api: 'com.alibaba:arouter-api:1.5.2',
                     compiler: 'com.alibaba:arouter-compiler:1.5.2'
             ],
+
+            //yichi 自己封装编写的库
+            yichi: [
+                    router: 'com.yichi:module-router:1.0.0-SNAPSHOT'
+            ]
 
 
     ]
@@ -195,6 +201,10 @@ ext {
             extension.implementation deps.kotlin.android_core_ktx
             extension.implementation deps.androidx.appcompat
             extension.implementation deps.androidx.material
+
+            //路由
+            extension.implementation deps.yichi.router
+            extension.kapt deps.router.compiler
 
             //unit test
 //            extension.implementation deps.unitTest.junit
