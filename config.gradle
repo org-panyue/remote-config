@@ -198,6 +198,11 @@ ext {
                 jvmTarget = build_versions.jvmTarget
             }
 
+            extension.configurations {
+                all*.exclude group: 'com.android.support', module: 'support-compat'
+                all*.exclude group: 'com.android.support', module: 'versionedparcelable'
+            }
+
     }
 
     //设置依赖
