@@ -27,7 +27,8 @@ ext {
             plugin: [
                     agp: "com.android.tools.build:gradle:8.2.2",
                     kgp: "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22",
-                    appLifecycleDispatchPlugin: "com.yichi.plugin:AppLifecycleDispatchPlugin:1.5.3"
+                    appLifecycleDispatchPlugin: "com.yichi.plugin:AppLifecycleDispatchPlugin:1.5.3",
+                    arouterRegister: "com.alibaba:arouter-register:1.0.2"
             ],
 
             //Application 声明周期分发
@@ -174,12 +175,20 @@ ext {
 
                 testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-                javaCompileOptions {
-                    annotationProcessorOptions {
-                        arguments = [AROUTER_MODULE_NAME: project.getName()]
-                        println 'AROUTER_MODULE_NAME：' + project.getName()
+
+                kapt {
+                    arguments {
+                        arg("AROUTER_MODULE_NAME", project.getName())
                     }
+                    println 'kapt AROUTER_MODULE_NAME：' + project.getName()
                 }
+
+//                javaCompileOptions {
+//                    annotationProcessorOptions {
+//                        arguments = [AROUTER_MODULE_NAME: project.getName()]
+//                        println 'AROUTER_MODULE_NAME：' + project.getName()
+//                    }
+//                }
             }
 
 
