@@ -171,6 +171,13 @@ ext {
                 versionName app_versions.versionName
 
                 testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+                javaCompileOptions {
+                    annotationProcessorOptions {
+                        arguments = [AROUTER_MODULE_NAME: project.getName()]
+                        println 'AROUTER_MODULE_NAME：' + project.getName()
+                    }
+                }
             }
 
 
