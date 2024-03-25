@@ -128,6 +128,7 @@ ext {
             }
 
             setDependencies extension.dependencies
+            setGlobalExcludeLib extension.configurations
 
     }
 
@@ -157,6 +158,7 @@ ext {
             }
 
             setDependencies extension.dependencies
+            setGlobalExcludeLib extension.configurations
     }
 
 
@@ -197,13 +199,8 @@ ext {
             extension.kotlinOptions {
                 jvmTarget = build_versions.jvmTarget
             }
-
-            extension.configurations {
-                all*.exclude group: 'com.android.support', module: 'support-compat'
-                all*.exclude group: 'com.android.support', module: 'versionedparcelable'
-            }
-
     }
+
 
     //设置依赖
     setDependencies = {
@@ -222,6 +219,13 @@ ext {
 //            extension.implementation deps.unitTest.junit
 //            extension.androidTestImplementation deps.unitTest.junitVersion
 //            extension.androidTestImplementation deps.unitTest.espressoCore
+    }
+
+    //设置全局排除
+    setGlobalExcludeLib = {
+        extension ->
+            extension.all*.exclude group: 'com.android.support', module: 'support-compat'
+            extension.all*.exclude group: 'com.android.support', module: 'versionedparcelable'
     }
 }
 
