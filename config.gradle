@@ -234,10 +234,10 @@ ext {
     }
 
     //设置全局排除
-    setGlobalExcludeLib = {
-        extension ->
-            extension.all*.exclude group: 'com.android.support', module: 'support-compat'
-            extension.all*.exclude group: 'com.android.support', module: 'versionedparcelable'
-    }
+//    setGlobalExcludeLib = {
+//        extension ->
+//            extension.all*.exclude group: 'com.android.support', module: 'support-compat'
+//            extension.all*.exclude group: 'com.android.support', module: 'versionedparcelable'
+//    }
 }
 
