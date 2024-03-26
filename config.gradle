@@ -67,8 +67,19 @@ ext {
             yichi: [
                     router: 'com.yichi:module-router:1.0.3-SNAPSHOT',
                     module_base: 'com.yichi:base-core:1.0.3-SNAPSHOT'
-            ]
+            ],
 
+            //yichi 业务组件
+            businessComponent: [
+                    //home
+                    home_export: "com.yichi:home-export:1.0.0",
+                    //dynamic
+                    dynamic_export: "com.yichi:dynamic-export:1.0.3-SNAPSHOT",
+                    //msg
+                    msg_export: "com.yichi:msg-export:1.0.0",
+                    //mine
+                    mine_export: "com.yichi:mine-export:1.0.0"
+            ]
 
     ]
 
