@@ -170,7 +170,7 @@ ext {
             }
 
             setDependencies extension.dependencies
-            setGlobalExcludeLib extension.configurations
+//            setGlobalExcludeLib extension.configurations
     }
 
 
