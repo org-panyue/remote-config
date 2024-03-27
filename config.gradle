@@ -75,7 +75,7 @@ ext {
                     rxandroid: 'io.reactivex.rxjava3:rxandroid:3.0.1',
                     rxbinding: 'com.jakewharton.rxbinding4:rxbinding:4.0.0',
                     fragmentationx: 'me.yokeyword:fragmentationx:1.0.2',
-                    backbround: 'com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.6'
+                    background: 'com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.6'
             ],
 
 
