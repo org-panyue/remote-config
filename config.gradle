@@ -75,7 +75,11 @@ ext {
                     rxandroid: 'io.reactivex.rxjava3:rxandroid:3.0.1',
                     rxbinding: 'com.jakewharton.rxbinding4:rxbinding:4.0.0',
                     fragmentationx: 'me.yokeyword:fragmentationx:1.0.2',
-                    background: 'com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.6'
+                    background: 'com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.6',
+                    rxlife: 'com.github.liujingxing.rxlife:rxlife-rxjava3:2.2.2',
+                    okhttp: 'com.squareup.okhttp3:okhttp:4.12.0',
+                    rxhttp: "com.github.liujingxing.rxhttp:rxhttp:3.2.5",
+                    rxHttpComplier: "com.github.liujingxing.rxhttp:rxhttp-compiler:3.2.5"
             ],
 
 
