@@ -34,7 +34,7 @@ ext {
             appLifeDispatch: [
                     annotation: 'com.yichi:AppLifecycleDispatch-Annotation:1.5.0',
                     processor: 'com.yichi:AppLifecycleDispatch-Processor:1.5.0',
-                    api: 'com.yichi:AppLifecycleDispatch-Api:1.5.3'
+                    api: 'com.yichi:AppLifecycleDispatch-Api:1.5.3',
             ],
 
             //unit test
@@ -48,7 +48,11 @@ ext {
             androidx: [
                     appcompat: "androidx.appcompat:appcompat:1.6.1",
                     material: 'com.google.android.material:material:1.11.0',
-                    multidex: 'androidx.multidex:multidex:2.0.1'
+                    multidex: 'androidx.multidex:multidex:2.0.1',
+                    ktx: [
+                            viewModelKtx: 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0',
+                            fragmentKtx: 'androidx.fragment:fragment-ktx:1.6.2'
+                    ]
             ],
 
             //kotlin
@@ -62,6 +66,19 @@ ext {
                     api: 'com.alibaba:arouter-api:1.5.2',
                     compiler: 'com.alibaba:arouter-compiler:1.5.2'
             ],
+
+            //一些出名的三方库
+            thirdLib: [
+                    utilCode: 'com.blankj:utilcodex:1.31.1',
+                    stateView: 'com.github.nukc:StateView:v3.0.2',
+                    rxjava: 'io.reactivex.rxjava3:rxjava:3.1.5',
+                    rxandroid: 'io.reactivex.rxjava3:rxandroid:3.0.1',
+                    rxbinding: 'com.jakewharton.rxbinding4:rxbinding:4.0.0',
+                    fragmentationx: 'me.yokeyword:fragmentationx:1.0.2',
+                    backbround: 'com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.6'
+            ],
+
+
 
             //yichi 自己封装编写的库
             yichi: [
