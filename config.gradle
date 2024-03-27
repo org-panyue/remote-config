@@ -79,7 +79,7 @@ ext {
                     rxlife: 'com.github.liujingxing.rxlife:rxlife-rxjava3:2.2.2',
                     okhttp: 'com.squareup.okhttp3:okhttp:4.12.0',
                     rxhttp: "com.github.liujingxing.rxhttp:rxhttp:3.2.5",
-                    rxHttpComplier: "com.github.liujingxing.rxhttp:rxhttp-compiler:3.2.5"
+                    rxHttpCompiler: "com.github.liujingxing.rxhttp:rxhttp-compiler:3.2.5"
             ],
 
 
