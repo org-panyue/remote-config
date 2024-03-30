@@ -92,7 +92,11 @@ ext {
                     dialogx: "com.github.kongzue.DialogX:DialogX:0.0.50.beta11",
                     xlog: 'com.elvishew:xlog:1.11.0',
                     verifyInputView: 'com.github.Wynsbin:VerificationCodeInputView:1.0.2',
-                    xxPermission: 'com.github.getActivity:XXPermissions:18.62'
+                    xxPermission: 'com.github.getActivity:XXPermissions:18.62',
+                    glideTransform: 'jp.wasabeef:glide-transformations:4.3.0',
+                    glide: 'com.github.bumptech.glide:glide:4.15.1',
+                    glideCompiler: 'com.github.bumptech.glide:compiler:4.15.1'
+
             ],
 
             //一些必要的第三方功能库
@@ -105,7 +109,7 @@ ext {
 
             //yichi 自己封装编写的库
             yichi: [
-                    module_base: 'com.yichi:base-core:1.0.8-SNAPSHOT',
+                    module_base: 'com.yichi:base-core:1.0.9-SNAPSHOT',
                     router: 'com.yichi:module-router:1.0.3-SNAPSHOT',
                     http: 'com.yichi:http:1.0.1-SNAPSHOT',
                     picture_compress: 'com.yichi:picture-compress:1.0.0-SNAPSHOT',
