@@ -83,7 +83,8 @@ ext {
                     toaster: 'com.github.getActivity:Toaster:12.6',
                     dialogx: "com.github.kongzue.DialogX:DialogX:0.0.50.beta11",
                     xlog: 'com.elvishew:xlog:1.11.0',
-                    verifyInputView: 'com.github.Wynsbin:VerificationCodeInputView:1.0.2'
+                    verifyInputView: 'com.github.Wynsbin:VerificationCodeInputView:1.0.2',
+                    xxPermission: 'com.github.getActivity:XXPermissions:18.62'
             ],
 
             //一些必要的第三方功能库
