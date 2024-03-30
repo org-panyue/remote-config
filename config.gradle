@@ -79,7 +79,17 @@ ext {
                     rxlife: 'com.github.liujingxing.rxlife:rxlife-rxjava3:2.2.2',
                     okhttp: 'com.squareup.okhttp3:okhttp:4.12.0',
                     rxhttp: "com.github.liujingxing.rxhttp:rxhttp:3.2.5",
-                    rxHttpCompiler: "com.github.liujingxing.rxhttp:rxhttp-compiler:3.2.5"
+                    rxHttpCompiler: "com.github.liujingxing.rxhttp:rxhttp-compiler:3.2.5",
+                    toaster: 'com.github.getActivity:Toaster:12.6',
+                    dialogx: "com.github.kongzue.DialogX:DialogX:0.0.50.beta11",
+                    xlog: 'com.elvishew:xlog:1.11.0',
+                    verifyInputView: 'com.github.Wynsbin:VerificationCodeInputView:1.0.2'
+            ],
+
+            //一些必要的第三方功能库
+            thirdFunction: [
+                    // 极光一键登录
+                    jverify: 'cn.jiguang.sdk:jverification:3.1.7'
             ],
 
 
