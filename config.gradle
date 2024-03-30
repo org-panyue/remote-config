@@ -97,7 +97,7 @@ ext {
 
             //yichi 自己封装编写的库
             yichi: [
-                    module_base: 'com.yichi:base-core:1.0.7-SNAPSHOT',
+                    module_base: 'com.yichi:base-core:1.0.8-SNAPSHOT',
                     router: 'com.yichi:module-router:1.0.3-SNAPSHOT',
                     http: 'com.yichi:http:1.0.1-SNAPSHOT'
             ],
