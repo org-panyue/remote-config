@@ -113,8 +113,8 @@ ext {
                     router: 'com.yichi:module-router:1.0.3-SNAPSHOT',
                     http: 'com.yichi:http:1.0.2-SNAPSHOT',
                     picture_compress: 'com.yichi:picture-compress:1.0.0-SNAPSHOT',
-                    picture_select: 'com.yichi:picture-select:1.0.2-SNAPSHOT',
-                    ucrop: 'com.yichi:ucrop:1.0.0-SNAPSHOT'
+                    picture_select: 'com.yichi:picture-select:1.0.3-SNAPSHOT',
+                    ucrop: 'com.yichi:ucrop:1.0.1-SNAPSHOT'
             ],
 
             //yichi 业务组件
