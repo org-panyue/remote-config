@@ -95,8 +95,8 @@ ext {
                     xxPermission: 'com.github.getActivity:XXPermissions:18.62',
                     glideTransform: 'jp.wasabeef:glide-transformations:4.3.0',
                     glide: 'com.github.bumptech.glide:glide:4.15.1',
-                    glideCompiler: 'com.github.bumptech.glide:compiler:4.15.1'
-
+                    glideCompiler: 'com.github.bumptech.glide:compiler:4.15.1',
+                    pickerView: 'com.contrarywind:Android-PickerView:4.1.9'
             ],
 
             //一些必要的第三方功能库
@@ -113,7 +113,7 @@ ext {
                     router: 'com.yichi:module-router:1.0.3-SNAPSHOT',
                     http: 'com.yichi:http:1.0.2-SNAPSHOT',
                     picture_compress: 'com.yichi:picture-compress:1.0.0-SNAPSHOT',
-                    picture_select: 'com.yichi:picture-select:1.0.3-SNAPSHOT',
+                    picture_select: 'com.yichi:picture-select:1.0.4-SNAPSHOT',
                     ucrop: 'com.yichi:ucrop:1.0.2-SNAPSHOT'
             ],
 
