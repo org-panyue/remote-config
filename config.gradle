@@ -98,7 +98,8 @@ ext {
                     glideCompiler: 'com.github.bumptech.glide:compiler:4.15.1',
                     pickerView: 'com.contrarywind:Android-PickerView:4.1.9',
                     smartRefresh: 'io.github.scwang90:refresh-layout-kernel:2.1.0',
-                    refreshClassicHeader: 'io.github.scwang90:refresh-header-classics:2.1.0'
+                    refreshClassicHeader: 'io.github.scwang90:refresh-header-classics:2.1.0',
+                    baseQuickAdapter: 'io.github.cymchad:BaseRecyclerViewAdapterHelper4:4.1.4'
             ],
 
             //一些必要的第三方功能库
