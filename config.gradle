@@ -104,7 +104,12 @@ ext {
                     tencentWebCore: 'com.tencent.tbs:tbssdk:44286',
                     dragRecyclerview: 'com.wonshinhyo:dragrecyclerview:0.1.1',
                     activityLauncher: 'com.github.DylanCaiCoding:ActivityResultLauncher:1.1.2',
-                    videoCache: 'com.danikula:videocache:2.7.1'
+                    videoCache: 'com.danikula:videocache:2.7.1',
+                    photoView: 'com.github.chrisbanes:PhotoView:2.0.0',
+                    dragPhotoView: 'com.github.githubwing:DragPhotoView:1.0.2',
+                    youthBanner: 'io.github.youth5201314:banner:2.2.3',
+                    bgaBanner: 'com.github.bingoogolapple:BGABanner-Android:3.0.1',
+                    dkplayer: 'xyz.doikki.android.dkplayer:dkplayer-java:3.3.7'
             ],
 
             //一些必要的第三方功能库
