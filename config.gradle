@@ -130,7 +130,7 @@ ext {
             //yichi 自己封装编写的库
             yichi: [
                     module_base: 'com.yichi:base-core:1.4.0-SNAPSHOT',
-                    base_ui: 'com.yichi:base-ui:1.1.9-SNAPSHOT',
+                    base_ui: 'com.yichi:base-ui:1.2.0-SNAPSHOT',
                     router: 'com.yichi:module-router:1.0.3-SNAPSHOT',
                     http: 'com.yichi:http:1.0.6-SNAPSHOT',
                     h5: 'com.yichi:h5:1.0.9-SNAPSHOT',
