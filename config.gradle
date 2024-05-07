@@ -122,13 +122,13 @@ ext {
                     countDownView: 'com.github.iwgang:countdownview:2.1.6'
             ],
 
-//            //地图
-//            map: [
-//                    //高德地图：搜索功能
-//                    gaodeSearch: 'com.amap.api:search:9.7.0',
-//                    //高德地图：3D地图功能
-//                    gaode3DMap: 'com.amap.api:3dmap:10.0.600'
-//            ],
+            //地图
+            map: [
+                    //高德地图：搜索功能
+                    gaodeSearch: 'com.amap.api:search:9.7.0',
+                    //高德地图：3D地图功能
+                    gaode3DMap: 'com.amap.api:3dmap:10.0.600'
+            ],
 //
 //            //支付
 //            pay: [
