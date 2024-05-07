@@ -133,9 +133,9 @@ ext {
             //支付
             pay: [
                     // 微信支付
-                    wechatPay 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0',
+                    wechatPay: 'com.tencent.mm.opensdk:wechat-sdk-android:+',
                     // 支付宝
-//                    aliPay 'com.alipay.sdk:alipaysdk-android:+@aar'
+                    aliPay: 'com.alipay.sdk:alipaysdk-android:+@aar'
             ],
 
             //一些必要的第三方功能库
