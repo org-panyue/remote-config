@@ -116,7 +116,17 @@ ext {
                     dkplayer: 'xyz.doikki.android.dkplayer:dkplayer-java:3.3.7',
                     yzjRecylerView: 'com.yanzhenjie.recyclerview:x:1.3.2',
                     rongImLib: 'cn.rongcloud.sdk:im_lib:5.8.0',
-                    rangeSeekBar: 'com.github.Jay-Goo:RangeSeekBar:v3.0.0'
+                    rangeSeekBar: 'com.github.Jay-Goo:RangeSeekBar:v3.0.0',
+                    gson: 'com.google.code.gson:gson:2.10.1',
+                    expandTextView: 'com.github.MZCretin:ExpandableTextView:v1.6.1-x'
+            ],
+
+            //支付
+            pay: [
+                    // 微信支付
+                    wechatPay 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0',
+                    // 支付宝
+                    aliPay 'com.alipay.sdk:alipaysdk-android:+@aar'
             ],
 
             //一些必要的第三方功能库
@@ -129,11 +139,11 @@ ext {
 
             //yichi 自己封装编写的库
             yichi: [
-                    module_base: 'com.yichi:base-core:1.4.0-SNAPSHOT',
-                    base_ui: 'com.yichi:base-ui:1.2.0-SNAPSHOT',
+                    module_base: 'com.yichi:base-core:1.6.4-SNAPSHOT',
+                    base_ui: 'com.yichi:base-ui:1.4.2-SNAPSHOT',
                     router: 'com.yichi:module-router:1.0.3-SNAPSHOT',
-                    http: 'com.yichi:http:1.0.6-SNAPSHOT',
-                    h5: 'com.yichi:h5:1.0.9-SNAPSHOT',
+                    http: 'com.yichi:http:1.0.7-SNAPSHOT',
+                    h5: 'com.yichi:h5:1.1.4-SNAPSHOT',
                     base_chat: 'com.yichi:base-chat:1.0.0-SNAPSHOT',
                     picture_compress: 'com.yichi:picture-compress:1.0.0-SNAPSHOT',
                     picture_select: 'com.yichi:picture-select:1.0.4-SNAPSHOT',
@@ -143,13 +153,13 @@ ext {
             //yichi 业务组件
             businessComponent: [
                     //home
-                    home_export: "com.yichi:home-export:1.0.0",
+                    home_export: "com.yichi:home-export:1.0.2",
                     //dynamic
                     dynamic_export: "com.yichi:dynamic-export:1.0.3-SNAPSHOT",
                     //msg
-                    msg_export: "com.yichi:msg-export:1.0.0",
+                    msg_export: "com.yichi:msg-export:1.0.6",
                     //mine
-                    mine_export: "com.yichi:mine-export:1.0.2"
+                    mine_export: "com.yichi:mine-export:1.1.4"
             ]
 
     ]
