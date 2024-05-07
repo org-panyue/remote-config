@@ -118,7 +118,16 @@ ext {
                     rongImLib: 'cn.rongcloud.sdk:im_lib:5.8.0',
                     rangeSeekBar: 'com.github.Jay-Goo:RangeSeekBar:v3.0.0',
                     gson: 'com.google.code.gson:gson:2.10.1',
-                    expandTextView: 'com.github.MZCretin:ExpandableTextView:v1.6.1-x'
+                    expandTextView: 'com.github.MZCretin:ExpandableTextView:v1.6.1-x',
+                    countDownView: 'com.github.iwgang:countdownview:2.1.6'
+            ],
+
+            //地图
+            map: [
+                    //高德地图：搜索功能
+                    gaodeSearch: 'com.amap.api:search:9.7.0',
+                    //高德地图：3D地图功能
+                    gaode3DMap: 'com.amap.api:3dmap:10.0.600'
             ],
 
             //支付
