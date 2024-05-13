@@ -149,8 +149,8 @@ ext {
 
             //yichi 自己封装编写的库
             yichi: [
-                    module_base: 'com.yichi:base-core:1.6.5-SNAPSHOT',
-                    base_ui: 'com.yichi:base-ui:1.4.4-SNAPSHOT',
+                    module_base: 'com.yichi:base-core:1.8.2-SNAPSHOT',
+                    base_ui: 'com.yichi:base-ui:1.7.8-SNAPSHOT',
                     router: 'com.yichi:module-router:1.0.3-SNAPSHOT',
                     http: 'com.yichi:http:1.0.7-SNAPSHOT',
                     h5: 'com.yichi:h5:1.1.4-SNAPSHOT',
@@ -163,13 +163,13 @@ ext {
             //yichi 业务组件
             businessComponent: [
                     //home
-                    home_export: "com.yichi:home-export:1.0.2-SNAPSHOT",
+                    home_export: "com.yichi:home-export:1.0.4-SNAPSHOT",
                     //dynamic
-                    dynamic_export: "com.yichi:dynamic-export:1.0.6-SNAPSHOT",
+                    dynamic_export: "com.yichi:dynamic-export:1.0.9-SNAPSHOT",
                     //msg
                     msg_export: "com.yichi:msg-export:1.0.6-SNAPSHOT",
                     //mine
-                    mine_export: "com.yichi:mine-export:1.1.4-SNAPSHOT"
+                    mine_export: "com.yichi:mine-export:1.2.6-SNAPSHOT"
             ]
 
     ]
