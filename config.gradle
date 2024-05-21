@@ -165,7 +165,7 @@ ext {
                     //home
                     home_export: "com.yichi:home-export:1.0.4-SNAPSHOT",
                     //dynamic
-                    dynamic_export: "com.yichi:dynamic-export:1.0.9-SNAPSHOT",
+                    dynamic_export: "com.yichi:dynamic-export:1.1.0-SNAPSHOT",
                     //msg
                     msg_export: "com.yichi:msg-export:1.0.8-SNAPSHOT",
                     //mine
