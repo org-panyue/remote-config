@@ -121,7 +121,8 @@ ext {
                     expandTextView: 'com.github.MZCretin:ExpandableTextView:v1.6.1-x',
                     countDownView: 'com.github.iwgang:countdownview:2.1.6',
                     lottie: 'com.airbnb.android:lottie:6.4.0',
-                    zing: 'com.google.zxing:core:3.5.3'
+                    zxing: 'com.google.zxing:core:3.5.3',
+                    rxFFmpeg: 'com.github.microshow:RxFFmpeg:4.9.0-lite'
             ],
 
             //地图
