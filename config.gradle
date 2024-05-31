@@ -126,7 +126,7 @@ ext {
 
             customer: [
                     //七鱼客服系统
-                    qiyukf 'com.qiyukf.unicorn:unicorn:9.3.0'
+                    qiyukf: 'com.qiyukf.unicorn:unicorn:9.3.0'
             ],
 
             //地图
