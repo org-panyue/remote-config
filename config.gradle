@@ -158,7 +158,8 @@ ext {
             yichi: [
                     module_base: 'com.yichi:base-core:2.0.7-SNAPSHOT',
                     base_ui: 'com.yichi:base-ui:1.8.9-SNAPSHOT',
-                    business_base: 'com.yichi:business-base:2.0.3-SNAPSHOT',
+                    business_base: 'com.yichi:business-base:2.0.5-SNAPSHOT',
+                    appUpdate: 'com.yichi:app-update:1.0.3-SNAPSHOT',
                     router: 'com.yichi:module-router:1.0.3-SNAPSHOT',
                     http: 'com.yichi:http:1.0.8-SNAPSHOT',
                     h5: 'com.yichi:h5:1.1.6-SNAPSHOT',
@@ -175,9 +176,9 @@ ext {
                     //dynamic
                     dynamic_export: "com.yichi:dynamic-export:1.1.1-SNAPSHOT",
                     //msg
-                    msg_export: "com.yichi:msg-export:1.1.4-SNAPSHOT",
+                    msg_export: "com.yichi:msg-export:1.1.5-SNAPSHOT",
                     //mine
-                    mine_export: "com.yichi:mine-export:1.4.4-SNAPSHOT"
+                    mine_export: "com.yichi:mine-export:1.4.6-SNAPSHOT"
             ]
 
     ]
