@@ -158,7 +158,7 @@ ext {
             yichi: [
                     module_base: 'com.yichi:base-core:2.0.7-SNAPSHOT',
                     base_ui: 'com.yichi:base-ui:1.8.9-SNAPSHOT',
-                    business_base: 'com.yichi:business-base:2.0.5-SNAPSHOT',
+                    business_base: 'com.yichi:business-base:2.1.0-SNAPSHOT',
                     appUpdate: 'com.yichi:app-update:1.0.3-SNAPSHOT',
                     router: 'com.yichi:module-router:1.0.3-SNAPSHOT',
                     http: 'com.yichi:http:1.0.8-SNAPSHOT',
