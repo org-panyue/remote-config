@@ -315,6 +315,10 @@ ext {
             extension.kotlinOptions {
                 jvmTarget = build_versions.jvmTarget
             }
+
+            extension.buildFeatures {
+                buildConfig true
+            }
     }
 
 
