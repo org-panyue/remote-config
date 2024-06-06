@@ -162,7 +162,7 @@ ext {
                     appUpdate: 'com.yichi:app-update:1.0.3-SNAPSHOT',
                     router: 'com.yichi:module-router:1.0.3-SNAPSHOT',
                     http: 'com.yichi:http:1.0.9-SNAPSHOT',
-                    h5: 'com.yichi:h5:1.1.6-SNAPSHOT',
+                    h5: 'com.yichi:h5:1.1.8-SNAPSHOT',
                     imkit: 'com.yichi:imkit:1.0.0',
                     picture_compress: 'com.yichi:picture-compress:1.0.0-SNAPSHOT',
                     picture_select: 'com.yichi:picture-select:1.0.4-SNAPSHOT',
