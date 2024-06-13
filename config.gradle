@@ -33,7 +33,7 @@ ext {
             //Application 声明周期分发
             appLifeDispatch: [
                     annotation: 'com.yichi:AppLifecycleDispatch-Annotation:1.0.0',
-                    processor: 'com.yichi:AppLifecycleDispatch-Processor:1.0.0',
+                    processor: 'com.yichi:AppLifecycleDispatch-Processor:1.0.1',
                     api: 'com.yichi:AppLifecycleDispatch-Api:1.0.0',
             ],
 
