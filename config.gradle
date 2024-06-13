@@ -163,8 +163,8 @@ ext {
                     router: 'com.yichi:module-router:1.0.0',
                     http: 'com.yichi:http:1.0.0',
                     h5: 'com.yichi:h5:1.0.0',
-                    imkit: 'com.yichi:imkit:1.1.3',
-                    im_sight: 'com.yichi:im-sight:1.0.3',
+                    imkit: 'com.yichi:imkit:1.0.0',
+                    im_sight: 'com.yichi:im-sight:1.0.0',
                     picture_compress: 'com.yichi:picture-compress:1.0.0',
                     picture_select: 'com.yichi:picture-select:1.0.0',
                     ucrop: 'com.yichi:ucrop:1.0.0'
