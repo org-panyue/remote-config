@@ -163,8 +163,8 @@ ext {
                     router: 'com.yichi:module-router:1.0.0',
                     http: 'com.yichi:http:1.0.0',
                     h5: 'com.yichi:h5:1.0.0',
-                    imkit: 'com.yichi:imkit:1.0.0',
-                    im_sight: 'com.yichi:im-sight:1.0.0',
+                    imkit: 'com.yichi:imkit:1.1.10',
+                    im_sight: 'com.yichi:im-sight:1.1.10',
                     picture_compress: 'com.yichi:picture-compress:1.0.0',
                     picture_select: 'com.yichi:picture-select:1.0.0',
                     ucrop: 'com.yichi:ucrop:1.0.0'
@@ -173,13 +173,13 @@ ext {
             //yichi 业务组件
             businessComponent: [
                     //home
-                    home_export: "com.yichi:home-export:1.0.0",
+                    home_export: "com.yichi:home-export:1.1.10",
                     //dynamic
-                    dynamic_export: "com.yichi:dynamic-export:1.0.0",
+                    dynamic_export: "com.yichi:dynamic-export:1.1.10",
                     //msg
-                    msg_export: "com.yichi:msg-export:1.0.3",
+                    msg_export: "com.yichi:msg-export:1.1.10",
                     //mine
-                    mine_export: "com.yichi:mine-export:1.0.4"
+                    mine_export: "com.yichi:mine-export:1.1.10"
             ]
 
     ]
