@@ -179,7 +179,7 @@ ext {
                     //msg
                     msg_export: "com.yichi:msg-export:1.1.10",
                     //mine
-                    mine_export: "com.yichi:mine-export:1.1.10"
+                    mine_export: "com.yichi:mine-export:1.1.12"
             ]
 
     ]
