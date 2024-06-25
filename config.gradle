@@ -156,7 +156,7 @@ ext {
 
             //yichi 自己封装编写的库
             yichi: [
-                    module_base: 'com.yichi:base-core:1.0.3',
+                    module_base: 'com.yichi:base-core:1.0.4',
                     base_ui: 'com.yichi:base-ui:1.0.5',
                     business_base: 'com.yichi:business-base:1.0.4',
                     appUpdate: 'com.yichi:app-update:1.0.0',
