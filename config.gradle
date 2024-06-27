@@ -121,7 +121,9 @@ ext {
                     countDownView: 'com.github.iwgang:countdownview:2.1.6',
                     lottie: 'com.airbnb.android:lottie:6.4.0',
                     zxing: 'com.google.zxing:core:3.5.3',
-                    rxFFmpeg: 'com.github.microshow:RxFFmpeg:4.9.0-lite'
+                    rxFFmpeg: 'com.github.microshow:RxFFmpeg:4.9.0-lite',
+                    videoProcessor: 'com.github.yellowcath:VideoProcessor:2.4.2'
+
             ],
 
             customer: [
@@ -158,11 +160,11 @@ ext {
             yichi: [
                     module_base: 'com.yichi:base-core:1.0.7',
                     base_ui: 'com.yichi:base-ui:1.0.5',
-                    business_base: 'com.yichi:business-base:1.0.6',
+                    business_base: 'com.yichi:business-base:1.0.7',
                     appUpdate: 'com.yichi:app-update:1.0.0',
                     router: 'com.yichi:module-router:1.0.0',
                     http: 'com.yichi:http:1.0.2',
-                    h5: 'com.yichi:h5:1.0.0',
+                    h5: 'com.yichi:h5:1.0.1',
                     imkit: 'com.yichi:imkit:1.1.12',
                     im_sight: 'com.yichi:im-sight:1.1.10',
                     picture_compress: 'com.yichi:picture-compress:1.0.0',
