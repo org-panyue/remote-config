@@ -164,7 +164,7 @@ ext {
                     appUpdate: 'com.yichi:app-update:1.0.0',
                     router: 'com.yichi:module-router:1.0.0',
                     http: 'com.yichi:http:1.0.2',
-                    h5: 'com.yichi:h5:1.0.3',
+                    h5: 'com.yichi:h5:1.0.4',
                     imkit: 'com.yichi:imkit:1.1.12',
                     im_sight: 'com.yichi:im-sight:1.1.10',
                     picture_compress: 'com.yichi:picture-compress:1.0.0',
