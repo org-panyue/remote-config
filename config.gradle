@@ -167,7 +167,7 @@ ext {
                     router: 'com.yichi:module-router:1.0.0',
                     http: 'com.yichi:http:1.0.2',
                     h5: 'com.yichi:h5:1.0.4',
-                    imkit: 'com.yichi:imkit:1.1.13',
+                    imkit: 'com.yichi:imkit:1.1.14',
                     im_sight: 'com.yichi:im-sight:1.1.10',
                     picture_compress: 'com.yichi:picture-compress:1.0.0',
                     picture_select: 'com.yichi:picture-select:1.0.0',
@@ -183,7 +183,7 @@ ext {
                     //msg
                     msg_export: "com.yichi:msg-export:1.1.10",
                     //mine
-                    mine_export: "com.yichi:mine-export:1.1.15"
+                    mine_export: "com.yichi:mine-export:1.1.16"
             ]
 
     ]
