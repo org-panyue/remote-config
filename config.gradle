@@ -160,9 +160,9 @@ ext {
 
             //yichi 自己封装编写的库
             yichi: [
-                    module_base: 'com.yichi:base-core:1.1.15',
+                    module_base: 'com.yichi:base-core:1.1.16',
                     base_ui: 'com.yichi:base-ui:1.0.8',
-                    business_base: 'com.yichi:business-base:1.1.22',
+                    business_base: 'com.yichi:business-base:1.1.23',
                     appUpdate: 'com.yichi:app-update:1.0.0',
                     router: 'com.yichi:module-router:1.0.0',
                     http: 'com.yichi:http:1.0.2',
@@ -183,7 +183,7 @@ ext {
                     //msg
                     msg_export: "com.yichi:msg-export:1.1.10",
                     //mine
-                    mine_export: "com.yichi:mine-export:1.1.16"
+                    mine_export: "com.yichi:mine-export:1.1.17"
             ]
 
     ]
