@@ -181,9 +181,9 @@ ext {
                     //dynamic
                     dynamic_export: "com.yichi:dynamic-export:1.1.10",
                     //msg
-                    msg_export: "com.yichi:msg-export:1.1.10",
+                    msg_export: "com.yichi:msg-export:1.1.11",
                     //mine
-                    mine_export: "com.yichi:mine-export:1.1.21"
+                    mine_export: "com.yichi:mine-export:1.1.22"
             ]
 
     ]
