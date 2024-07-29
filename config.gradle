@@ -63,7 +63,8 @@ ext {
                     emoji2: "androidx.emoji2:emoji2:1.4.0",
                     ktx: [
                             viewModelKtx: 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0',
-                            fragmentKtx: 'androidx.fragment:fragment-ktx:1.6.2'
+                            fragmentKtx: 'androidx.fragment:fragment-ktx:1.6.2',
+                            workKtx: "androidx.work:work-runtime-ktx:2.9.0"
                     ]
             ],
 
