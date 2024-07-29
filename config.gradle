@@ -161,9 +161,9 @@ ext {
 
             //yichi 自己封装编写的库
             yichi: [
-                    module_base: 'com.yichi:base-core:1.1.21',
+                    module_base: 'com.yichi:base-core:1.1.22',
                     base_ui: 'com.yichi:base-ui:1.0.9',
-                    business_base: 'com.yichi:business-base:1.1.32',
+                    business_base: 'com.yichi:business-base:1.1.34',
                     appUpdate: 'com.yichi:app-update:1.0.1',
                     router: 'com.yichi:module-router:1.0.0',
                     http: 'com.yichi:http:1.0.2',
