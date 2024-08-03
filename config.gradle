@@ -163,7 +163,7 @@ ext {
             yichi: [
                     module_base: 'com.yichi:base-core:1.1.22',
                     base_ui: 'com.yichi:base-ui:1.0.9',
-                    business_base: 'com.yichi:business-base:1.1.38',
+                    business_base: 'com.yichi:business-base:1.1.39',
                     appUpdate: 'com.yichi:app-update:1.0.1',
                     router: 'com.yichi:module-router:1.0.0',
                     http: 'com.yichi:http:1.0.2',
@@ -178,7 +178,7 @@ ext {
             //yichi 业务组件
             businessComponent: [
                     //home
-                    home_export: "com.yichi:home-export:1.1.13",
+                    home_export: "com.yichi:home-export:1.1.14",
                     //dynamic
                     dynamic_export: "com.yichi:dynamic-export:1.1.10",
                     //msg
