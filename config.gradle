@@ -178,7 +178,7 @@ ext {
             //yichi 业务组件
             businessComponent: [
                     //home
-                    home_export: "com.yichi:home-export:1.1.14",
+                    home_export: "com.yichi:home-export:1.1.15",
                     //dynamic
                     dynamic_export: "com.yichi:dynamic-export:1.1.10",
                     //msg
