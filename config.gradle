@@ -207,6 +207,10 @@ def addRepos(RepositoryHandler handler) {
     handler.maven {
         url 'https://jitpack.io'
     }
+    // 新增：Appodeal Artifactory 仓库
+    maven {
+        url 'https://artifactory.appodeal.com/appodeal-public/'
+    }
     //gradle 插件仓库
     handler.gradlePluginPortal()
     handler.maven {
