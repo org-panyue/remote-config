@@ -29,7 +29,7 @@ class MavenPublish implements Plugin<Project> {
 
     def DEFAULT_USER_NAME = "admin"
     def DEFAULT_PASSWORD = "admin123"
-    def DEFAULT_REPOSITORY = "http://101.37.87.61:8085/repository/yichi/"
+    def DEFAULT_REPOSITORY = "http://47.115.175.109:8085/repository/yichi/"
 
     @Override
     void apply(Project project) {
