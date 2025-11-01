@@ -338,8 +338,8 @@ ext {
             extension.implementation deps.androidx.material
 
             //路由
-            extension.implementation deps.yichi.router
-            extension.kapt deps.router.compiler
+//            extension.implementation deps.yichi.router
+//            extension.kapt deps.router.compiler
 
             //unit test
 //            extension.implementation deps.unitTest.junit
