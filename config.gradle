@@ -199,15 +199,15 @@ def addRepos(RepositoryHandler handler) {
     handler.google()
     //Maven 仓库
     handler.mavenCentral()
+    //jcenter 阿里云镜像仓库
+    handler.maven {
+        url 'https://maven.aliyun.com/repository/jcenter'
+    }
     //gradle 插件仓库
     handler.gradlePluginPortal()
     //jitpack 仓库
     handler.maven {
         url 'https://jitpack.io'
-    }
-    //jcenter 阿里云镜像仓库
-    handler.maven {
-        url 'https://maven.aliyun.com/repository/jcenter'
     }
     handler.maven {
         allowInsecureProtocol true
