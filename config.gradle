@@ -163,7 +163,7 @@ ext {
             yichi: [
                     module_base: 'com.yichi:base-core:1.1.22',
                     base_ui: 'com.yichi:base-ui:1.0.9',
-                    business_base: 'com.yichi:business-base:1.1.41',
+                    business_base: 'com.yichi:business-base:1.1.42',
                     appUpdate: 'com.yichi:app-update:1.0.1',
                     router: 'com.yichi:module-router:1.0.0',
                     http: 'com.yichi:http:1.0.3',
@@ -203,12 +203,12 @@ def addRepos(RepositoryHandler handler) {
     handler.maven {
         url 'https://maven.aliyun.com/repository/jcenter'
     }
-    //gradle 插件仓库
-    handler.gradlePluginPortal()
     //jitpack 仓库
     handler.maven {
         url 'https://jitpack.io'
     }
+    //gradle 插件仓库
+    handler.gradlePluginPortal()
     handler.maven {
         allowInsecureProtocol true
         credentials {
