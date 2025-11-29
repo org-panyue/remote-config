@@ -125,7 +125,7 @@ ext {
                     rxFFmpeg: 'com.github.microshow:RxFFmpeg:4.9.0-lite',
                     videoProcessor: 'com.github.yellowcath:VideoProcessor:2.4.2',
                     downloader:  'com.ixuea:android-downloader:3.0.1'
-
+                    aliUpload: 'com.aliyun.dpa:oss-android-sdk:2.9.21'
 
             ],
 
@@ -161,7 +161,7 @@ ext {
 
             //yichi 自己封装编写的库
             yichi: [
-                    module_base: 'com.yichi:base-core:1.1.22',
+                    module_base: 'com.yichi:base-core:1.1.23',
                     base_ui: 'com.yichi:base-ui:1.0.9',
                     business_base: 'com.yichi:business-base:1.1.42',
                     appUpdate: 'com.yichi:app-update:1.0.1',
