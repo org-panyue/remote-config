@@ -124,7 +124,7 @@ ext {
                     zxing: 'com.google.zxing:core:3.5.3',
                     rxFFmpeg: 'com.github.microshow:RxFFmpeg:4.9.0-lite',
                     videoProcessor: 'com.github.yellowcath:VideoProcessor:2.4.2',
-                    downloader:  'com.ixuea:android-downloader:3.0.1'
+                    downloader:  'com.ixuea:android-downloader:3.0.1',
                     aliUpload: 'com.aliyun.dpa:oss-android-sdk:2.9.21'
 
             ],
