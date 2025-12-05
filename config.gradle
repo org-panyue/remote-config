@@ -161,14 +161,14 @@ ext {
 
             //yichi 自己封装编写的库
             yichi: [
-                    module_base: 'com.yichi:base-core:1.1.31',
-                    base_ui: 'com.yichi:base-ui:1.0.9',
-                    business_base: 'com.yichi:business-base:1.1.49',
-                    appUpdate: 'com.yichi:app-update:1.0.1',
-                    router: 'com.yichi:module-router:1.0.0',
-                    http: 'com.yichi:http:1.0.4',
-                    h5: 'com.yichi:h5:1.0.4',
-                    imkit: 'com.yichi:imkit:1.1.14',
+                    module_base: 'com.yichi:base-core:1.1.32',
+                    base_ui: 'com.yichi:base-ui:1.1.0',
+                    business_base: 'com.yichi:business-base:1.1.50',
+                    appUpdate: 'com.yichi:app-update:1.0.3',
+                    router: 'com.yichi:module-router:1.0.1',
+                    http: 'com.yichi:http:1.0.5',
+                    h5: 'com.yichi:h5:1.0.5',
+                    imkit: 'com.yichi:imkit:1.1.15',
                     im_sight: 'com.yichi:im-sight:1.1.10',
                     picture_compress: 'com.yichi:picture-compress:1.0.0',
                     picture_select: 'com.yichi:picture-select:1.0.0',
@@ -178,13 +178,13 @@ ext {
             //yichi 业务组件
             businessComponent: [
                     //home
-                    home_export: "com.yichi:home-export:1.1.15",
+                    home_export: "com.yichi:home-export:1.1.16",
                     //dynamic
-                    dynamic_export: "com.yichi:dynamic-export:1.1.10",
+                    dynamic_export: "com.yichi:dynamic-export:1.1.11",
                     //msg
-                    msg_export: "com.yichi:msg-export:1.1.12",
+                    msg_export: "com.yichi:msg-export:1.1.13",
                     //mine
-                    mine_export: "com.yichi:mine-export:1.1.25"
+                    mine_export: "com.yichi:mine-export:1.1.26"
             ]
 
     ]
