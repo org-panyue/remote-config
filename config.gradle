@@ -164,7 +164,7 @@ ext {
                     module_base: 'com.yichi:base-core:1.1.32',
                     base_ui: 'com.yichi:base-ui:1.1.0',
                     business_base: 'com.yichi:business-base:1.1.50',
-                    appUpdate: 'com.yichi:app-update:1.0.3',
+                    appUpdate: 'com.yichi:app-update:1.0.2',
                     router: 'com.yichi:module-router:1.0.0',
                     http: 'com.yichi:http:1.0.5',
                     h5: 'com.yichi:h5:1.0.5',
