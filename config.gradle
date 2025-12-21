@@ -4,7 +4,7 @@ ext {
     maven = [
          username: 'admin',
          password: 'admin123',
-         repository: 'http://8.138.31.21:8085/repository/yichi/'
+         repository: 'https://nexus3.hunyotech.com/repository/yichi/'
     ]
 
     app_versions = [
