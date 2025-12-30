@@ -154,14 +154,14 @@ ext {
             //一些必要的第三方功能库
             thirdFunction: [
                     // 极光一键登录
-                    jverify: 'cn.jiguang.sdk:jverification:3.4.5'
+                    jverify: 'cn.jiguang.sdk:jverification:3.1.7'
             ],
 
 
 
             //yichi 自己封装编写的库
             yichi: [
-                    module_base: 'com.yichi:base-core:1.1.33',
+                    module_base: 'com.yichi:base-core:1.1.34',
                     base_ui: 'com.yichi:base-ui:1.1.1',
                     business_base: 'com.yichi:business-base:1.1.52',
                     appUpdate: 'com.yichi:app-update:1.0.2',
