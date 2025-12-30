@@ -154,7 +154,7 @@ ext {
             //一些必要的第三方功能库
             thirdFunction: [
                     // 极光一键登录
-                    jverify: 'cn.jiguang.sdk:jverification:3.1.7'
+                    jverify: 'cn.jiguang.sdk:jverification:3.4.5'
             ],
 
 
